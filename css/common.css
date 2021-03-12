@@ -291,42 +291,14 @@ a,
   transition: scale var(--transition-duration-cubic);
 }
 
-.modal > .close-button {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  right: 0;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 50%;
-  margin-top: 8px;
-  margin-right: 8px;
-  cursor: pointer;
-}
-
-.close-button .icon {
-  fill: #000;
-
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close-button:focus .icon,
-.close-button:hover .icon {
-  fill: #2196f3;
-}
-
 /* ===FORM=== */
-.form-order {
+.modal__form {
   width: 448px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.form-header {
+.modal__form-title {
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
@@ -337,21 +309,21 @@ a,
   color: var(--primary-title-color);
 }
 
-.input-forms {
+.modal__inputs {
   margin-bottom: 20px;
 }
 
-.form-field {
+.modal__input {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.form-field:not(:last-child) {
+.modal__input:not(:last-child) {
   margin-bottom: 28px;
 }
 
-.form-field .icon {
+.modal__input-icon {
   display: inline-block;
   position: absolute;
   left: 12px;
@@ -363,7 +335,7 @@ a,
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-label {
+.modal__input-label {
   margin-bottom: 4px;
 
   font-weight: normal;
@@ -375,7 +347,7 @@ a,
   color: var(--primary-text-color);
 }
 
-.input-area {
+.modal__input-area {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -384,25 +356,25 @@ a,
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-area:hover,
-.input-area:focus,
-.input-area:active {
+.modal__input-area:hover,
+.modal__input-area:focus,
+.modal__input-area:active {
   border-color: #2196f3;
   outline: none;
   cursor: pointer;
 }
 
-.input-area:focus + .icon,
-.input-area:hover + .icon {
+.modal__input-area:focus + .icon,
+.modal__input-area:hover + .icon {
   fill: #2196f3;
 }
 
-.input-area.textarea {
+.modal__input-area.textarea {
   height: 120px;
   padding: 12px 16px;
 }
 
-.input-area.textarea::placeholder {
+.modal__input-area.textarea::placeholder {
   font-weight: normal;
   font-size: 12px;
   line-height: 1.16;
@@ -416,7 +388,7 @@ textarea {
 }
 
 /* CHECKBOX POLICY */
-.checkbox-policy {
+.modal__checkbox {
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -433,13 +405,13 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.checkbox-policy input[type='checkbox'] {
+.modal__checkbox input[type='checkbox'] {
   width: 16px;
   height: 15px;
   border-color: var(--primary-title-color);
 }
 
-.policy-text {
+.modal__checkbox-agreement {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -450,24 +422,24 @@ textarea {
   color: var(--primary-text-color);
 }
 
-.checkbox-policy a {
+.modal__checkbox-link {
   text-decoration: underline;
   color: var(--alt-logo-color);
 }
 
-.checkbox-policy a:hover {
+.modal__checkbox-link:hover {
   color: var(--alt-logo-color);
   cursor: pointer;
 }
 
-.checkbox-policy > .checkbox {
+.modal__checkbox-input {
   position: absolute;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 
-.checkbox-icon {
+.modal__checkbox-icon {
   display: block;
   border: 2px solid #000;
   width: 16px;
@@ -481,7 +453,7 @@ textarea {
     border-color 250ms var(--transition-duration-cubic);
 }
 
-.checkbox:checked + .checkbox-icon {
+.modal__checkbox-input:checked + .modal__checkbox-icon {
   background-color: var(--alt-logo-color);
   border-color: var(--alt-logo-color);
   background-image: url(../images/check.svg);
@@ -490,7 +462,7 @@ textarea {
 }
 
 /* Button SUBMIT */
-.button-submit {
+.modal__button-submit {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -506,6 +478,35 @@ textarea {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+/* Close button */
+.modal__close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.modal__close-icon {
+  fill: #000;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__close-button:focus .modal__close-icon,
+.modal__close-button:hover .modal__close-icon {
+  fill: #2196f3;
 }
 
 /* Section Advantages */
