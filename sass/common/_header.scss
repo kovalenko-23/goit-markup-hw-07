@@ -1,0 +1,23 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.page-header .list {
+  align-items: center;
+}
+
+.page-header.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: flex;
+}
+
+.page-header .list {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}

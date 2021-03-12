@@ -1,0 +1,15 @@
+.address__link {
+  display: flex;
+  align-items: center;
+}
+
+.address__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.address.list {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
