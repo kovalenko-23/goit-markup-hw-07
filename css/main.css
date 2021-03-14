@@ -423,7 +423,13 @@ a,
   letter-spacing: 0.02em;
 }
 
-.navigation__link:hover, .navigation__link:focus, .navigation__link--current {
+.navigation__link:hover, .navigation__link:focus {
+  color: #2196f3;
+  -webkit-transition: color var(--transition-duration-cubic);
+  transition: color var(--transition-duration-cubic);
+}
+
+.navigation__link--current {
   color: #2196f3;
   -webkit-transition: color var(--transition-duration-cubic);
   transition: color var(--transition-duration-cubic);

@@ -36,12 +36,17 @@ a,
 
 .navigation__link {
   &:hover,
-  &:focus,
-  &--current {
+  &:focus {
     color: #2196f3;
 
     transition: color var(--transition-duration-cubic);
   }
+}
+
+.navigation__link--current {
+  color: #2196f3;
+
+  transition: color var(--transition-duration-cubic);
 }
 
 .navigation__link--current {
