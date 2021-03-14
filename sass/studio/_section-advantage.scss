@@ -6,12 +6,12 @@
   justify-content: space-between;
 }
 
-.section-advantages__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .section-advantages__item {
   width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-advantages__item-background {
@@ -28,15 +28,6 @@
   margin: 0;
 }
 
-.section-advantages .section-item {
-  color: var(--primary-title-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .section-advantages {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -51,11 +42,6 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.section-advantages .section-text {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .section-advantages__advantage.top {

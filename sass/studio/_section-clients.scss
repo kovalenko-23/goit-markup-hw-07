@@ -37,12 +37,12 @@
   color: var(--social-links-color-1);
 
   transition: color var(--transition-duration-cubic);
-}
 
-.section-clients__button:hover,
-.section-clients__button:focus {
-  color: var(--alt-logo-color);
-  border-color: var(--alt-logo-color);
+  &:hover,
+  &:focus {
+    color: var(--alt-logo-color);
+    border-color: var(--alt-logo-color);
+  }
 }
 
 .section-clients__icon {

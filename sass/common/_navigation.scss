@@ -1,47 +1,15 @@
 .navigation__list {
+  align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: block;
-}
-
-/* Web Studio link */
-.logo {
   display: flex;
-  align-items: center;
-  margin-right: 93px;
 }
 
-.logo__web {
-  color: var(--alt-logo-color);
-}
-
+// appropriate use :not(:child)???
 .address__item + .address__item,
 .navigation__item + .navigation__item {
   margin-left: 50px;
-}
-
-.logo:focus,
-.logo:hover {
-  color: #000;
-}
-
-.navigation__link:hover,
-.navigation__link:focus,
-.navigation__link.current,
-.address a:hover,
-.address a:focus {
-  color: #2196f3;
-
-  transition: color var(--transition-duration-cubic);
-}
-
-.address a {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
 }
 
 .navigation .logo {
@@ -66,21 +34,31 @@ a,
   letter-spacing: 0.02em;
 }
 
-.navigation__link.current {
-  position: relative;
-  display: block;
+.navigation__link {
+  &:hover,
+  &:focus,
+  &--current {
+    color: #2196f3;
+
+    transition: color var(--transition-duration-cubic);
+  }
 }
 
-.navigation__link.current::after {
-  content: '';
-
-  position: absolute;
-  bottom: -218%;
-  left: 0;
-
+.navigation__link--current {
+  position: relative;
   display: block;
-  height: 5px;
-  width: 100%;
-  background-color: var(--alt-logo-color);
-  border-radius: 2px;
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: -218%;
+    left: 0;
+
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: var(--alt-logo-color);
+    border-radius: 2px;
+  }
 }
