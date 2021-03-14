@@ -430,14 +430,11 @@ a,
 }
 
 .navigation__link--current {
+  position: relative;
+  display: block;
   color: #2196f3;
   -webkit-transition: color var(--transition-duration-cubic);
   transition: color var(--transition-duration-cubic);
-}
-
-.navigation__link--current {
-  position: relative;
-  display: block;
 }
 
 .navigation__link--current::after {
@@ -1477,3 +1474,4 @@ textarea {
   letter-spacing: 0.03em;
   margin-top: 4px;
 }
+/*# sourceMappingURL=main.css.map */

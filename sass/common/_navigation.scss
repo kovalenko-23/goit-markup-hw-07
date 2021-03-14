@@ -44,14 +44,12 @@ a,
 }
 
 .navigation__link--current {
+  position: relative;
+  display: block;
+
   color: #2196f3;
 
   transition: color var(--transition-duration-cubic);
-}
-
-.navigation__link--current {
-  position: relative;
-  display: block;
 
   &::after {
     content: '';
