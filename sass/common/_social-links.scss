@@ -1,14 +1,14 @@
-.list-socials {
+.socials {
   display: flex;
   justify-content: space-around;
   padding: 0;
 }
 
-.list-socials__item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.list-socials__link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,14 +28,14 @@
   }
 }
 
-.list-socials__icon {
+.socials__icon {
   fill: currentColor;
 }
 
-.list-socials__icon.list-socials__icon--footer {
+.socials__icon.socials__icon--footer {
   fill: var(--primary-white-color);
 }
 
-.list-socials__link--footer {
+.socials__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
 }

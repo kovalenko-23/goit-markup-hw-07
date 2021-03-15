@@ -3,12 +3,12 @@
   padding-bottom: 94px;
 }
 
-.list-buttons {
+.filter-list {
   display: flex;
   justify-content: center;
 }
 
-.list-buttons__item {
+.filter-list__item {
   color: var(--primary-title-color);
   font-family: inherit;
   font-weight: 500;
@@ -23,7 +23,7 @@
   }
 }
 
-.list-buttons__button {
+.filter-list__filter {
   display: inline-block;
   border-radius: 4px;
   border: none;

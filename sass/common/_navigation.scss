@@ -7,7 +7,6 @@
 }
 
 // appropriate use :not(:child)???
-.address__item + .address__item,
 .navigation__item + .navigation__item {
   margin-left: 50px;
 }

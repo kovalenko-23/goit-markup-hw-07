@@ -1,11 +1,11 @@
-.section-clients .container {
+.clients .container {
   padding-top: 98px;
   padding-bottom: 92px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.section-clients__title {
+.clients__title {
   color: var(--primary-title-color);
   font-weight: bold;
   font-size: 36px;
@@ -16,17 +16,17 @@
   margin-bottom: 50px;
 }
 
-.section-clients__list {
+.clients__list {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.section-clients__client:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-clients__button {
+.clients__link {
   width: 170px;
   height: 90px;
   border: 1px var(--social-links-color-1) solid;
@@ -45,6 +45,6 @@
   }
 }
 
-.section-clients__icon {
+.clients__icon {
   fill: currentColor;
 }

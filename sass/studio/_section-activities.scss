@@ -1,8 +1,8 @@
-.section-activities {
+.activities {
   padding-bottom: 94px;
 }
 
-.section-activities__title {
+.activities__title {
   color: var(--primary-title-color);
   font-weight: bold;
   text-align: center;
@@ -12,17 +12,17 @@
   margin-bottom: 50px;
 }
 
-.section-activities__list {
+.activities__list {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.section-activities__item:not(:last-child) {
+.activities__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-activities__thumb {
+.activities__thumb {
   position: relative;
 
   &::before {
@@ -37,7 +37,7 @@
   }
 }
 
-.section-activities__text {
+.activities__text {
   display: inline-block;
   position: absolute;
   bottom: 0;
