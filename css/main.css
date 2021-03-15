@@ -1061,6 +1061,14 @@ textarea {
   fill: currentColor;
 }
 
+.list-socials__icon.list-socials__icon--footer {
+  fill: var(--primary-white-color);
+}
+
+.list-socials__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .section-clients .container {
   padding-top: 98px;
   padding-bottom: 92px;
@@ -1179,35 +1187,13 @@ textarea {
   margin-bottom: 9px;
 }
 
-/* SOCIALS */
-.footer__socials {
-  margin-left: 70px;
-}
-
 .footer__socials-title {
-  color: var(--primary-white-color);
-  margin-bottom: 20px;
-  margin-left: 0;
-  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.list-socials__link {
-  fill: var(--primary-white-color);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.list-socials__link:hover, .list-socials__link:focus {
-  fill: var(--primary-white-color);
-  background-color: var(--alt-logo-color);
-}
-
-.list-socials__icon {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
 }
 
 .footer__form {
@@ -1474,4 +1460,3 @@ textarea {
   letter-spacing: 0.03em;
   margin-top: 4px;
 }
-/*# sourceMappingURL=main.css.map */

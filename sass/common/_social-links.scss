@@ -31,3 +31,11 @@
 .list-socials__icon {
   fill: currentColor;
 }
+
+.list-socials__icon.list-socials__icon--footer {
+  fill: var(--primary-white-color);
+}
+
+.list-socials__link--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+}
