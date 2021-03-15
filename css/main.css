@@ -1064,7 +1064,7 @@ textarea {
   fill: currentColor;
 }
 
-.socials__icon.socials__icon--footer {
+.socials__icon.list-socials__icon--footer {
   fill: var(--primary-white-color);
 }
 
