@@ -1,5 +1,6 @@
 .footer {
   background-color: #2f303a;
+  // margin-top: -30px;
 }
 
 .footer__wrapper {
@@ -32,7 +33,7 @@
 }
 
 /* footer auth */
-.footer__city {
+.footer__contacts-location {
   display: inline-block;
   margin-bottom: 9px;
   font-style: normal;
@@ -43,7 +44,7 @@
   color: var(--primary-white-color);
 }
 
-.footer__item {
+.footer__contacts-link {
   display: inline-block;
   color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
@@ -54,6 +55,11 @@
   &:not(:last-child) {
     margin-bottom: 9px;
   }
+}
+
+.footer__contacts-list {
+  @extend .list;
+  width: 301px;
 }
 
 .footer__socials-title {

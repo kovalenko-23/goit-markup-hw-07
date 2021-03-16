@@ -17,7 +17,8 @@
   margin-right: 10px;
 }
 
-.contacts.list {
+.contacts {
+  @extend .list;
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
