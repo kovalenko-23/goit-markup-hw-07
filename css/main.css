@@ -643,7 +643,7 @@ a,
   color: var(--primary-text-color);
 }
 
-.modal__input-area {
+.modal__input-area, .modal__textarea {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -652,58 +652,58 @@ a,
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__input-area:hover,
+.modal__input-area:hover, .modal__textarea:hover,
 .modal__input-area:focus,
-.modal__input-area:active {
+.modal__textarea:focus,
+.modal__input-area:active,
+.modal__textarea:active {
   border-color: #2196f3;
   outline: none;
   cursor: pointer;
 }
 
-.modal__input-area:focus + .modal__input-icon,
-.modal__input-area:hover + .modal__input-icon {
+.modal__input-area:focus + .modal__input-icon, .modal__textarea:focus + .modal__input-icon,
+.modal__input-area:hover + .modal__input-icon,
+.modal__textarea:hover + .modal__input-icon {
   fill: #2196f3;
 }
 
-.modal__input-area.textarea {
+.modal__textarea {
   height: 120px;
   padding: 12px 16px;
-}
-
-.modal__input-area.textarea::-webkit-input-placeholder {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal__input-area.textarea:-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal__input-area.textarea::-ms-input-placeholder {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal__input-area.textarea::placeholder {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-textarea {
   resize: none;
+}
+
+.modal__input-area.textarea::-webkit-input-placeholder, .textarea.modal__textarea::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__input-area.textarea:-ms-input-placeholder, .textarea.modal__textarea:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__input-area.textarea::-ms-input-placeholder, .textarea.modal__textarea::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__input-area.textarea::placeholder, .textarea.modal__textarea::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .modal__checkbox {
