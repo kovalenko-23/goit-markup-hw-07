@@ -51,15 +51,15 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
 }
 
 .footer__contacts-list {
   @extend .list;
   width: 301px;
+}
+
+.footer__contacts-item:first-child {
+  margin-bottom: 9px;
 }
 
 .footer__socials-title {
